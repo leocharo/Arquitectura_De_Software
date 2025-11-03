@@ -282,7 +282,6 @@ clearHistoryButton.addEventListener('click', clearHistory);
 // Evento de la nueva Calculadora IA
 askGeminiButton.addEventListener('click', handleAskGemini);
 
-// Inicializar la aplicación
 window.onload = function() {
     // Aplicar el tema guardado o el tema por defecto al cargar
     const savedTheme = localStorage.getItem('theme') || 'theme-light';

@@ -199,7 +199,6 @@ export class PlanoCartesiano {
         vector.dibujar(this.ctx, this, false);
     }
 
-    // NUEVO MÉTODO para múltiples vectores (dispersión)
     dibujarMultiplesVectores(vectores) {
         this.dibujarEjes(); // Limpiar y dibujar ejes
         vectores.forEach(vector => {
