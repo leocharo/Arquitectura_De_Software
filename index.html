@@ -184,6 +184,18 @@
             border: 2px solid var(--accent-color);
             background-color: var(--canvas-bg);
         }
+        
+        body.theme-dark .text-dark {
+            /* Anula text-dark de Bootstrap para usar el color claro definido en el tema */
+            color: var(--text-color) !important;
+        }
+        /* Si el texto se vuelve demasiado claro en modo oscuro, ajusta el color del label a uno más oscuro si es necesario, 
+           pero la corrección anterior debería ser suficiente para los principales inputs. */
+        /* Por ejemplo, para las etiquetas (labels) que usan form-label text-dark: */
+        
+        body.theme-dark .form-label.text-dark {
+            color: var(--text-color) !important;
+        }
     </style>
 </head>
 
